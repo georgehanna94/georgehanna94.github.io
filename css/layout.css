@@ -62,14 +62,14 @@ header .banner-text h1 {
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
 header .banner-text h3 {
    font: 16px/1.9em 'roboto', ;
    color: whitesmoke;
    margin: 0 auto;
    width: 70%;
-   text-shadow: 0px 1px 8px rgba(0, 0, 0, .5);
+   text-shadow: 0px 1px 8px rgba(0, 0, 0, 1);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -87,7 +87,7 @@ header .social {
    margin: 24px 0;
    padding: 0;
    font-size: 30px;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
 }
 header .social li {
    display: inline-block;
@@ -219,6 +219,9 @@ ul#nav li.current a { color: #F06000; }
 #about p {
    line-height: 30px;
    color: #fff;
+   text-align: justify;
+   text-justify: inter-word;
+
 }
 #about .profile-pic {
    position: relative;
@@ -687,16 +690,32 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 #testimonials .text-container {
-   padding-top: 96px;
+   padding-top: 30px;
    padding-bottom: 66px;
 }
 #testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;   
+    text-align: center;
+   font: 26px/24px 'opensans-bold', sans-serif;   
    text-transform: uppercase;
-   letter-spacing: 3px;
+   letter-spacing: 1px;
+    padding-bottom: 25 px;
    color: #fff;
 }
-#testimonials h1 span { display: none; }
+#testimonials h1 span { 
+    display: white; 
+border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+
+#testimonials p {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+}
+
+#testimonials img{
+        width:50%; height:auto;
+        position:relative
+}
+
 #testimonials .header-col { padding-top: 9px; }
 #testimonials .header-col h1:before {
    font-family: 'FontAwesome';
@@ -704,16 +723,17 @@ ul#nav li.current a { color: #F06000; }
 	padding-right: 10px;
 	font-size: 72px;
    line-height: 72px;
-   text-align: left;
+   text-align: center;
    float: left;
    color: #fff;
 }
 
 /*	Blockquotes */
 #testimonials blockquote {
-   margin: 0 0px 30px 0px;
+   margin-left: auto;
+    margin-right: auto;
    padding-left: 0;
-   position: relative;
+   position: absolute
    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
 #testimonials blockquote:before { content: none; }
@@ -787,8 +807,8 @@ ul#nav li.current a { color: #F06000; }
 .flex-control-nav {
     width: 100%;
     position: absolute;
-    bottom: -20px;
-    text-align: left;
+    bottom: -40px;
+    text-align: center;
 }
 .flex-control-nav li {
     margin: 0 6px;
@@ -826,7 +846,7 @@ ul#nav li.current a { color: #F06000; }
 
 #contact {
    background: #191919;
-   padding-top: 96px;
+   padding-top: 30px;
    padding-bottom: 102px;
    color: #636363;
 }
@@ -842,7 +862,19 @@ ul#nav li.current a { color: #F06000; }
    color: #EBEEEE;
    margin-bottom: 6px;
 }
-#contact h1 span { display: none; }
+#contact h2 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #EBEEEE;
+   margin-bottom: 20px;
+}
+#contact h2 span { 
+    display: white; 
+    border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+
 #contact h1:before {
    font-family: 'FontAwesome';
    content: "\f0e0";
@@ -861,6 +893,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #contact p.lead {
    font: 18px/36px 'opensans-light', sans-serif;
+    color: white;
    padding-right: 3%;
 }
 #contact .header-col { padding-top: 6px; }
